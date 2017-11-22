@@ -1,0 +1,37 @@
+{
+  "name": "react-wysiwyg-typescript",
+  "version": "0.0.5",
+  "description": "A wrapper Component for react-draft-wysiwyg written in Typescript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumn2u/react-wysiwyg-typescript.git"
+  },
+  "keywords": [
+    "react draft editor",
+    "editor",
+    "WYSIWYG Typescript"
+  ],
+  "author": "sumn2u",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sumn2u/react-wysiwyg-typescript/issues"
+  },
+  "homepage": "https://github.com/sumn2u/react-wysiwyg-typescript#readme",
+  "typings": "index.d.ts",
+  "devDependencies": {
+    "@types/react": "^15.0.16",
+    "react": "^15.4.2",
+    "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "@types/draft-js": "^0.10.0",
+    "draft-js": "^0.10.0",
+    "draftjs-to-html": "^0.7.0",
+    "html-to-draftjs": "^0.1.0-beta7",
+    "react-draft-wysiwyg": "^1.8.4"
+  }
+}

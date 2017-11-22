@@ -1,0 +1,38 @@
+.react-wysiwyg-typescript-wrapper * {
+    box-sizing: initial
+}
+
+.react-wysiwyg-typescript-toolbar {
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.react-wysiwyg-typescript-toolbar .rdw-option-wrapper {
+    border: none;
+    min-width: 20px;
+}
+
+.react-wysiwyg-typescript-toolbar .rdw-dropdown-optionwrapper {
+    width: 100%;
+    background: white;
+    border-radius: 0;
+    max-height: 300px;
+    overflow: auto;
+    left: -1px;
+}
+
+.react-wysiwyg-typescript-toolbar .rdw-option-active,
+.react-wysiwyg-typescript-toolbar .rdw-option-wrapper:hover {
+    border-radius: 0;
+    background: #FFC107;
+    box-shadow: none;
+}
+
+.react-wysiwyg-typescript-editor {
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+    min-height: 160px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
