@@ -61,6 +61,24 @@ exports.htmlToDraft = function (content) {
     return draft_js_1.EditorState.createWithContent(contentState);
 };
 /**
+ * convert raw content to Draft State
+ * @param content your contents
+ * @return {EditorState}
+ */
+exports.rawToDraft = function (content) {
+    var contentState = draft_js_1.convertFromRaw(JSON.parse(content));
+    return draft_js_1.EditorState.createWithContent(contentState);
+};
+/**
+ * convert draft state to raw
+ * @param content of draft state
+ * @return  Object{entryMap: Object, blocks:Array()}
+ */
+exports.draftToRaw = function (content) {
+    var contentState = content.getCurrentContent();
+    return JSON.stringify(draft_js_1.convertToRaw(contentState));
+};
+/**
  * an empty state
  */
 exports.EmptyState = draft_js_1.EditorState.createEmpty();

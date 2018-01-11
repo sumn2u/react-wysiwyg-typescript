@@ -17,6 +17,18 @@ export declare const draftToHtml: (input: any, ...options: any[]) => any;
  */
 export declare const htmlToDraft: (content: string) => EditorState;
 /**
+ * convert raw content to Draft State
+ * @param content your contents
+ * @return {EditorState}
+ */
+export declare const rawToDraft: (content: string) => EditorState;
+/**
+ * convert draft state to raw
+ * @param content of draft state
+ * @return  Object{entryMap: Object, blocks:Array()}
+ */
+export declare const draftToRaw: (content: any) => string;
+/**
  * an empty state
  */
 export declare const EmptyState: EditorState;
