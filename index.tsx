@@ -5,6 +5,7 @@ import './index.css'
 import DraftToHtml from 'draftjs-to-html'
 import HtmlToDraft from 'html-to-draftjs'
 import {stateToHTML} from 'draft-js-export-html'
+import ReactHtmlParser from 'react-html-parser'
 import { EditorState, ContentState, convertFromHTML, convertFromRaw, convertToRaw } from 'draft-js'
 
 /**
@@ -63,12 +64,12 @@ export const draftToRaw = (content: any) => {
 /**
  * convert draft state to html
  * @param content of draft state
- * @return  html 
+ * @return  html
  */
 export const draftStateToHTML = (content: any) => {
     const getEditorContent = EditorState.createWithContent(convertFromRaw(JSON.parse(content)))
     const html = stateToHTML(getEditorContent.getCurrentContent())
-    return html
+    return ReactHtmlParser(html)
 }
 
 /**

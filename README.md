@@ -51,6 +51,10 @@ const toDraft = rawToDraft(content)
 
 const toRaw = draftToRaw(content)
 
+// convert rawToDraft file to HTML
+
+const toHTML = draftStateToHTML(content)
+
 ```
 
 If you use antd's Form Component and you are ready to go.

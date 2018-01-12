@@ -33,7 +33,7 @@ export declare const draftToRaw: (content: any) => string;
  * @param content of draft state
  * @return  html
  */
-export declare const draftStateToHTML: (content: any) => string;
+export declare const draftStateToHTML: (content: any) => any;
 /**
  * an empty state
  */
