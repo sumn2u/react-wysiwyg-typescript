@@ -28,7 +28,7 @@ yarn add react-wysiwyg-typescript
 ## Usage
 
 ```ts
-import Draft, { htmlToDraft, draftToHtml, EmptyState, rawToDraft, draftToRaw } from 'react-wysiwyg-typescript'
+import Draft, { htmlToDraft, draftToHtml, EmptyState, rawToDraft, draftToRaw , draftStateToHTML} from 'react-wysiwyg-typescript'
 
 state = {
     editorState: htmlToDraft('Your html contents') // or use an EmptyState
