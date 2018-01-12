@@ -4,6 +4,7 @@ import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import './index.css'
 import DraftToHtml from 'draftjs-to-html'
 import HtmlToDraft from 'html-to-draftjs'
+import {stateToHTML} from 'draft-js-export-html'
 import { EditorState, ContentState, convertFromHTML, convertFromRaw, convertToRaw } from 'draft-js'
 
 /**
@@ -57,6 +58,17 @@ export const rawToDraft = (content: string) => {
 export const draftToRaw = (content: any) => {
     const contentState = content.getCurrentContent()
     return JSON.stringify(convertToRaw(contentState))
+}
+
+/**
+ * convert draft state to html
+ * @param content of draft state
+ * @return  html 
+ */
+export const draftStateToHTML = (content: any) => {
+    const getEditorContent = EditorState.createWithContent(convertFromRaw(JSON.parse(content)))
+    const html = stateToHTML(getEditorContent.getCurrentContent())
+    return html
 }
 
 /**

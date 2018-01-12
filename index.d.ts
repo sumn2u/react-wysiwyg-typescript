@@ -29,6 +29,12 @@ export declare const rawToDraft: (content: string) => EditorState;
  */
 export declare const draftToRaw: (content: any) => string;
 /**
+ * convert draft state to html
+ * @param content of draft state
+ * @return  html
+ */
+export declare const draftStateToHTML: (content: any) => string;
+/**
  * an empty state
  */
 export declare const EmptyState: EditorState;

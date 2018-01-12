@@ -1,6 +1,6 @@
 {
   "name": "react-wysiwyg-typescript",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "A wrapper Component for react-draft-wysiwyg written in Typescript",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,7 @@
   "dependencies": {
     "@types/draft-js": "^0.10.0",
     "draft-js": "^0.10.0",
+    "draft-js-export-html": "^1.2.0",
     "draftjs-to-html": "^0.7.0",
     "html-to-draftjs": "^0.1.0-beta7",
     "react-draft-wysiwyg": "^1.8.4"

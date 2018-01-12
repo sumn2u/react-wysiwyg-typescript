@@ -24,6 +24,7 @@ require("react-draft-wysiwyg/dist/react-draft-wysiwyg.css");
 require("./index.css");
 var draftjs_to_html_1 = require("draftjs-to-html");
 var html_to_draftjs_1 = require("html-to-draftjs");
+var draft_js_export_html_1 = require("draft-js-export-html");
 var draft_js_1 = require("draft-js");
 /**
  * convert an editor state to html
@@ -77,6 +78,16 @@ exports.rawToDraft = function (content) {
 exports.draftToRaw = function (content) {
     var contentState = content.getCurrentContent();
     return JSON.stringify(draft_js_1.convertToRaw(contentState));
+};
+/**
+ * convert draft state to html
+ * @param content of draft state
+ * @return  html
+ */
+exports.draftStateToHTML = function (content) {
+    var getEditorContent = draft_js_1.EditorState.createWithContent(draft_js_1.convertFromRaw(JSON.parse(content)));
+    var html = draft_js_export_html_1.stateToHTML(getEditorContent.getCurrentContent());
+    return html;
 };
 /**
  * an empty state
