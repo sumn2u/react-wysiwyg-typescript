@@ -1,5 +1,7 @@
 # react-wysiwyg-typescript
 
+[![GitHub issues](https://img.shields.io/github/issues/sumn2u/react-wysiwyg-typescript.svg)](https://github.com/sumn2u/react-wysiwyg-typescript/issues) [![GitHub forks](https://img.shields.io/github/forks/sumn2u/react-wysiwyg-typescript.svg)](https://github.com/sumn2u/react-wysiwyg-typescript/network) [![GitHub stars](https://img.shields.io/github/stars/sumn2u/react-wysiwyg-typescript.svg)](https://github.com/sumn2u/react-wysiwyg-typescript/stargazers) [![GitHub license](https://img.shields.io/github/license/sumn2u/react-wysiwyg-typescript.svg)](https://github.com/sumn2u/react-wysiwyg-typescript/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/sumn2u/react-wysiwyg-typescript.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsumn2u%2Freact-wysiwyg-typescript)
+
 ![banner](assests/wysiwyg.png)
 
 > A wrapper Component for react-draft-wysiwyg written in Typescript

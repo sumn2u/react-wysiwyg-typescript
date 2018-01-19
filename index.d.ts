@@ -21,7 +21,7 @@ export declare const htmlToDraft: (content: string) => EditorState;
  * @param content your contents
  * @return {EditorState}
  */
-export declare const rawToDraft: (content: string) => EditorState;
+export declare const rawToDraft: (content: string) => EditorState | undefined;
 /**
  * convert draft state to raw
  * @param content of draft state

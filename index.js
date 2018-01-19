@@ -68,6 +68,8 @@ exports.htmlToDraft = function (content) {
  * @return {EditorState}
  */
 exports.rawToDraft = function (content) {
+    if (content == "")
+        return;
     var contentState = draft_js_1.convertFromRaw(JSON.parse(content));
     return draft_js_1.EditorState.createWithContent(contentState);
 };
@@ -86,6 +88,8 @@ exports.draftToRaw = function (content) {
  * @return  html
  */
 exports.draftStateToHTML = function (content) {
+    if (content == "")
+        return;
     var getEditorContent = draft_js_1.EditorState.createWithContent(draft_js_1.convertFromRaw(JSON.parse(content)));
     var html = draft_js_export_html_1.stateToHTML(getEditorContent.getCurrentContent());
     return react_html_parser_1.default(html);

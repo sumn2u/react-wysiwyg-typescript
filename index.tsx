@@ -46,6 +46,7 @@ export const htmlToDraft = (content: string) => {
  * @return {EditorState}
  */
 export const rawToDraft = (content: string) => {
+    if(content == "") return;
     const contentState = convertFromRaw(JSON.parse(content))
     return EditorState.createWithContent(contentState)
 }
@@ -67,6 +68,7 @@ export const draftToRaw = (content: any) => {
  * @return  html
  */
 export const draftStateToHTML = (content: any) => {
+    if(content == "") return;
     const getEditorContent = EditorState.createWithContent(convertFromRaw(JSON.parse(content)))
     const html = stateToHTML(getEditorContent.getCurrentContent())
     return ReactHtmlParser(html)
