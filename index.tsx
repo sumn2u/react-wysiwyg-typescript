@@ -306,7 +306,7 @@ class Draft extends React.Component<DraftProps, DraftState> {
             wrapperClassName="react-wysiwyg-typescript-wrapper"
             editorClassName="react-wysiwyg-typescript-editor"
             toolbarClassName="react-wysiwyg-typescript-toolbar"
-            placeholder="Type any text .."
+            placeholder=""
             toolbar={this.props.toolbar}
             locale={this.props.locale}
             {...this.props}
