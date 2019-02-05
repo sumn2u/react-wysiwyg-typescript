@@ -1,6 +1,7 @@
 # react-wysiwyg-typescript
 
 [![GitHub issues](https://img.shields.io/github/issues/sumn2u/react-wysiwyg-typescript.svg)](https://github.com/sumn2u/react-wysiwyg-typescript/issues) [![GitHub forks](https://img.shields.io/github/forks/sumn2u/react-wysiwyg-typescript.svg)](https://github.com/sumn2u/react-wysiwyg-typescript/network) [![GitHub stars](https://img.shields.io/github/stars/sumn2u/react-wysiwyg-typescript.svg)](https://github.com/sumn2u/react-wysiwyg-typescript/stargazers) [![GitHub license](https://img.shields.io/github/license/sumn2u/react-wysiwyg-typescript.svg)](https://github.com/sumn2u/react-wysiwyg-typescript/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url/https/github.com/sumn2u/react-wysiwyg-typescript.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fsumn2u%2Freact-wysiwyg-typescript)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsumn2u%2Freact-wysiwyg-typescript.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsumn2u%2Freact-wysiwyg-typescript?ref=badge_shield)
 
 ![banner](assests/wysiwyg.png)
 
@@ -100,3 +101,6 @@ Small note: If editing the README, please conform to the [standard-readme](https
 ## License
 
 MIT © sumn2u
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fsumn2u%2Freact-wysiwyg-typescript.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fsumn2u%2Freact-wysiwyg-typescript?ref=badge_large)
